@@ -4,7 +4,7 @@ const FormData = require('form-data');
 const fs = require('fs');
 const path = require('path');
 const fastify = Fastify({ logger: true });
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
 const generateNewId = () => {
   const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
