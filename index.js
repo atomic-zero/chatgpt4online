@@ -180,6 +180,10 @@ fastify.get('/clear', (req, reply) => {
   reply.send({ message: `Data for id ${id} has been cleared` });
 });
 
+fastify.get('/', (req, reply) => {
+        reply.send("API IS RUNNING!");
+});
+
 fastify.listen({ port }, err => {
   if (err) {
     fastify.log.error(err);
